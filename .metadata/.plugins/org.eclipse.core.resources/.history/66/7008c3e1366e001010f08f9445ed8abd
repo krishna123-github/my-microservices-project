@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: CUSTOMERMS
+server:
+  port: 4451
+eureka:
+  client:
+		register-with-eureka: true
+		fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:4444/eureka/
+

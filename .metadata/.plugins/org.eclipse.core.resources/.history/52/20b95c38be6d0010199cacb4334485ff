@@ -1,0 +1,26 @@
+#Tomcat server details
+server:
+  port: 8888
+
+spring:
+  application:
+    name: springcloudgateway
+  main:
+    web-application-type: reactive
+#use the Reactive web stack (webflux) instead of traditional servlet-based (MVC) stack
+#Reactive programming is asynchronous, non-blocking programming paradigm
+#Spring Cloud gateway is built on Spring WebFlux, not on Spring MVC
+# configuration of routes
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+           - id: CUSTOMERMS
+             uri: http://localhost:4572
+             predicates:
+              - Path=/customers/**
+           - id: STOCKMS
+             uri: http://localhost:4571
+             predicates:
+             - Path=/stocks/**

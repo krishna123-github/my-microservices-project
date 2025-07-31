@@ -1,0 +1,16 @@
+package com.kp;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+
+@SpringBootApplication
+@EnableDiscoveryClient
+public class StockMsApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(StockMsApplication.class, args);
+		System.out.println("Stock MS is running...");
+	}
+
+}

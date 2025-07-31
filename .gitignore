@@ -1,0 +1,29 @@
+
+#Java
+*.class
+*.jar
+*.war
+*.log
+target/
+build/
+.gradle/
+.idea/
+.DS_Store
+
+# Maven
+.mvn/
+!mvnw
+!mvnw.cmd
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+out/
+EOF
+

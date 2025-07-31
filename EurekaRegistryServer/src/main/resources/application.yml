@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: EurekaRegistryServer
+server:
+  port: 4444
+# Eureka related config
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: false
+    register-with-eureka: false

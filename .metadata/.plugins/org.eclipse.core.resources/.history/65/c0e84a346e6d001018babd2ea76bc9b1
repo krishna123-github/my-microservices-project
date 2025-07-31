@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: StockMS
+server:
+  port: 4452
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:4444/eureka/
