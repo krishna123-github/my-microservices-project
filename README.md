@@ -15,5 +15,5 @@ Added Dependency in CustoemrMS & StockMS
 </dependency> 
 
 Access the Swagger Doc using this URL
-http://localhost:<port>/swagger-ui.html
+http://MS_IP:MS_PORT/swagger-ui.html
 
